@@ -6,17 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>作业7demo3</title>
     <style>
-
-        .table1{
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .table1,.table2{
+            width: 800px;
             margin: 0 auto;
-            border: 1px solid grey;
             padding: 10px;
+            font-size: 24px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-spacing: 0;
+            border-collapse: collapse;
         }
         .tr1{
-            background-color: darkcyan;
-            padding: 10px;
+            background-color: #4CAF50;
             text-align: left;
             margin-top: 10px;
+            border-spacing: 0;
+            color: white;
+        }
+        th,td{
+            padding: 10px;
+        }
+        .tr1,.tr2,.tr3,.tr4,.tr5,.tr6{
+            border: 1px solid #ccc;
+        }
+        .tr2,.tr4,.tr6{
+            background-color: rgb(241, 241, 241);
+        }
+        .tr11{
+            background-color: white;
+            text-align: left;
+            margin-top: 10px;
+            border-spacing: 0;
+        }        
+        .tr11,.tr22,.tr33,.tr44,.tr55,.tr66{
+            border: 1px solid #ccc;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .tr22,.tr44,.tr66{
+            background-color: rgb(241, 241, 241);
         }
     </style>
 </head>
@@ -24,16 +57,70 @@
     <div id="layout">
         <table class="table1">
             <tr class="tr1">
-                <th>firstname</th>
-                <th>lastname</th>
+                <th>first name</th>
+                <th>last name</th>
                 <th>points</th>
             </tr>
-            <tr class="tr2"></tr>
-            <tr class="tr3"></tr>
-            <tr class="tr4"></tr>
-            <tr class="tr5"></tr>
-            <tr class="tr6"></tr>
+            <tr class="tr2">
+                <td>jill</td>
+                <td>smith</td>
+                <td>50</td>
+            </tr>
+            <tr class="tr3">
+                <td>jill</td>
+                <td>smith</td>
+                <td>50</td>
+            </tr>
+            <tr class="tr4">
+                <td>jill</td>
+                <td>smith</td>
+                <td>50</td>
+            </tr>
+            <tr class="tr5">
+                <td>jill</td>
+                <td>smith</td>
+                <td>50</td>
+            </tr>
+            <tr class="tr6">
+                <td>jill</td>
+                <td>smith</td>
+                <td>50</td>
+            </tr>
         </table>
+        
+        <table class="table2">
+                <tr class="tr11">
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>points</th>
+                </tr>
+                <tr class="tr22">
+                    <td>jill</td>
+                    <td>smith</td>
+                    <td>50</td>
+                </tr>
+                <tr class="tr33">
+                    <td>jill</td>
+                    <td>smith</td>
+                    <td>50</td>
+                </tr>
+                <tr class="tr44">
+                    <td>jill</td>
+                    <td>smith</td>
+                    <td>50</td>
+                </tr>
+                <tr class="tr55">
+                    <td>jill</td>
+                    <td>smith</td>
+                    <td>50</td>
+                </tr>
+                <tr class="tr66">
+                    <td>jill</td>
+                    <td>smith</td>
+                    <td>50</td>
+                </tr>
+            </table>
+            
     </div>
 </body>
 </html>

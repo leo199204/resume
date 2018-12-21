@@ -185,7 +185,8 @@ section > ul p {
     margin-left: 20px;
 }
 .timeline li:nth-child(even) {
-    margin-left: calc(50% - 100px);
+    padding-left: calc(50% - 78px);
+    padding-right:0;
     text-align: left;
 }
 .timeline li:nth-child(even) img {
@@ -204,7 +205,7 @@ section > ul p {
     top: 200px;
 }
 .timeline > li:nth-child(even)::before {
-    left: calc(8.5% - 2px);
+    /*left: calc(8.5% - 2px);*/
     bottom: 210px;
 }
 .timeline > li:last-child::before{

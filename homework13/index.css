@@ -6,6 +6,7 @@
 }
 html , body{
     height: 100%;
+    min-width: 1200px;
 }
 body {
     font: 16px/1.5 Arial;
@@ -26,16 +27,18 @@ ul {
 .btn {
     display: inline-block;
     color: black;
-    padding: 20px;
-    font-size: 30px;
+    padding: 20px 24px;
+    font-size: 24px;
     border-radius: 10px;
-    background: yellow;
-    opacity: 0.8;
-    font-weight: bold;
+    background: orange;
+    font-weight: 600;
+    opacity: 0.9;
 }
 .btn:hover {
+    color: white;
     opacity: 1;
 }
+
 
 /* index.css */
 
@@ -51,10 +54,9 @@ header {
     position: relative;
 }
 .logo {
-    color: yellow;
-    font-size: 40px;
+    color: orange;
     float: left;
-    margin-top: 14px;
+    margin-top: 24px;
 }
 .nav {
     float: right;
@@ -73,7 +75,7 @@ header {
     text-transform: uppercase;
 }
 .nav a:hover {
-    background: yellow;
+    background: rgba(255, 166, 0, 0.6);
     color: black;
 }
 header .intro {
@@ -94,4 +96,239 @@ header .intro > h2 {
 }
 header .intro .btn {
     margin-top: 20px;
+}
+section {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+section > p {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+section > h2 {
+    font-size: 50px;
+}
+section > ul .iconfont {
+    font-size: 80px;
+    color: orange;
+}
+section li {
+    width: 33.33%;
+    float: left;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+}
+section > ul h3 {
+    margin-top: 10px;
+}
+section > ul p {
+    padding: 10px 0 30px 0;
+}
+.portfolio > ul img {
+    width: 372px;
+    height: 260px;
+}
+.section-ct {
+    background: #f7f7f7;
+}
+.portfolio {
+    padding-top: 30px;
+}
+.portfolio > ul {
+    margin-left: -3.33%;
+}
+.portfolio li {
+    width: 30%;
+    margin-left: 3.33%;
+    padding: 0;
+    position: relative;
+}
+.portfolio p {
+    font-style: italic;
+}
+.portfolio-hover {
+    width: 372px;
+    height: 260px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 166, 0, 0.6);
+    display: none;
+    font-size: 100px;
+    font-weight: bolder;
+    padding: 50px;
+    color: rgba(255, 255, 255, 0.808);
+}
+.img-hover:hover .portfolio-hover {
+    display: block;
+}
+.timeline li {
+    width: 100%;
+    text-align: right;
+    margin-top: 100px;
+    padding-right: calc(50% - 100px);
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.timeline p {
+    padding-bottom: 0;
+}
+.timeline img ,.timeline .img {
+    width: 200px;
+    height: 200px;;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 166, 0, 0.2);
+    float: right;
+    margin-left: 20px;
+}
+.timeline li:nth-child(even) {
+    margin-left: calc(50% - 100px);
+    text-align: left;
+}
+.timeline li:nth-child(even) img {
+    float: left;
+    margin-right: 20px;
+    margin-left: -20px;
+}
+.timeline > li::before{
+    content: "";
+    display: inline-block;
+    height: 150px;
+    width: 4px;
+    background-color: rgba(255, 166, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 200px;
+}
+.timeline > li:nth-child(even)::before {
+    left: calc(8.5% - 2px);
+    bottom: 210px;
+}
+.timeline > li:last-child::before{
+    background: none;
+}
+.timeline .img {
+    background: yellow;
+    text-align: center;
+    float: left;
+    margin-left: -20px;
+    padding: 28px 0;
+    font-size: 24px;
+}
+.team li {
+    background: none;
+}
+.team img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 166, 0, 0.2);
+}
+.team-description {
+    font-style: inherit;
+}
+.team .iconfont ,footer .iconfont {
+    display: inline-block;
+    font-size: 40px;
+    color: grey;
+    margin-top: -20px;
+}
+.team .iconfont:hover,footer .iconfont:hover {
+    color: orange;
+}
+.team-icon {
+    margin: 0 auto;
+}
+.team-icon > li {
+    padding: 0;
+    width: 10%;
+    margin: 10px;
+    float: unset;
+}
+.partner li {
+    width: 25%;
+    padding: 0;
+}
+.contact {
+    background: black url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png)
+    center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.contact h2 {
+    color: white;
+}
+.contact p {
+    color: rgba(245, 245, 245, 0.6);
+}
+.contact-input {
+    margin: 30px 0;
+}
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 8px;
+    font: rgba(255, 166, 0, 0.2);
+    margin-top: 30px;
+    font: 20px/1.5 arial rgba(128, 128, 128, 0.301);
+    border: none;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    height: 210px;
+    padding-left: 8px;
+    padding-top: 8px;
+    resize: none;
+    border-radius: 5px;
+    font-family: Arial;
+}
+input[type="text"]:hover , textarea:hover {
+    outline: rgba(255, 166, 0, 0.8) 2px solid;
+    box-shadow: 0 0 0 1px rgba(255, 166, 0, 0.8);
+}
+input[type="text"]:focus , textarea:focus {
+    outline: rgba(255, 166, 0, 0.8) 2px solid;
+    box-shadow: 0 0 0 1px rgba(255, 166, 0, 0.8);
+}
+.left-input {
+    width: 50%;
+    margin-top:-30px;
+    float: left;
+    padding: 0 2%;
+}
+.left-input > input {
+    float: left;
+}
+.right-input {
+    float: left;
+    width: 50%;
+    padding: 0 2%;
+    margin-right: -50%;
+}
+.copyright ,footer>.team-icon {
+    width: 33.33%;
+}
+footer {
+    padding: 10px 0;
+    display: table;
+    text-align: center;
+}
+.copyright ,  footer > ul{
+    display: table-cell;
+    vertical-align: middle;
+}
+.right-footer li {
+    padding-left: 15%;
+}
+.right-footer a {
+    float: left;
+    color: orange;
+    margin: 0 20px;
+}
+.right-footer a:hover {
+    text-decoration: underline orange;
 }
